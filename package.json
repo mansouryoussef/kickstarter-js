@@ -1,0 +1,28 @@
+{
+  "name": "kickstarter",
+  "version": "1.0.0",
+  "description": "Kickstart javascript applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mansouryoussef/kickstarter-js.git"
+  },
+  "keywords": [
+    "javascript",
+    "node.js",
+    "react.js",
+    "typescript"
+  ],
+  "author": "Youssef Mansour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mansouryoussef/kickstarter-js/issues"
+  },
+  "homepage": "https://github.com/mansouryoussef/kickstarter-js#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
