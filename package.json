@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Kickstart javascript applications.",
   "main": "index.js",
+  "bin": {
+    "kickstart": "./bin/kickstart.js",
+    "ks": "./bin/kickstart.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +27,11 @@
   },
   "homepage": "https://github.com/mansouryoussef/kickstarter-js#readme",
   "dependencies": {
-    "esm": "^3.2.25"
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "commander": "^5.1.0",
+    "configstore": "^5.0.1",
+    "inquirer": "^7.1.0",
+    "listr": "^0.14.3"
   }
 }
