@@ -7,7 +7,7 @@ const token = {
   async set() {
     const tokenManager = new TokenManager();
 
-    const input = await inquirer.prompt([
+    const userInput = await inquirer.prompt([
       {
         type: "input",
         name: "token",
@@ -16,7 +16,7 @@ const token = {
       },
     ]);
 
-    const token = tokenManager.setToken(input.token);
+    const token = tokenManager.setToken(userInput.token);
 
     if (token) {
       console.log("Personal token set!".blue);
