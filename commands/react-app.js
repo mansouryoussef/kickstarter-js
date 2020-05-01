@@ -11,31 +11,13 @@ module.exports = async (options) => {
     create_react_app,
     remove_unnecessary_files,
     create_github_repo,
-    ask_for_github_repo,
-    set_github_api_token,
+    check_if_user_want_repo,
+    check_for_project_name,
   } = task_functions;
 
-  const check_for_github_repo = async () => {
-    try {
-      const tokenManager = new TokenManager();
+  await check_for_project_name();
 
-      await tokenManager.getToken();
-      // There is a token set therefor, user wants github repo
-      return true;
-    } catch (error) {
-      // There is no token set therefor, ask if user wants github repo.
-      const user_want_github = await ask_for_github_repo();
-
-      if (user_want_github) {
-        await set_github_api_token();
-        return true;
-      }
-      // user does not want github repo.
-      return false;
-    }
-  };
-
-  const user_want_github_repo = await check_for_github_repo();
+  const user_want_github_repo = await check_if_user_want_repo();
 
   const tasks = [
     {
