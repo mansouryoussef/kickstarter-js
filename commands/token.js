@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const TokenManager = require("../lib/TokenManager");
-const { isRequired } = require("../utils/validation");
+const { is_required } = require("../utils/validation");
 require("colors");
 
 const token = {
@@ -12,7 +12,7 @@ const token = {
         type: "input",
         name: "token",
         message: "Please enter github personal token:".green,
-        validate: isRequired,
+        validate: is_required,
       },
     ]);
 

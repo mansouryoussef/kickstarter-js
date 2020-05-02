@@ -5,7 +5,9 @@ const react_app_action = require("../commands/react-app");
 
 program
   .version(pkg.version)
-  .command("token", "Manage personal token.")
-  .command("react-app", "Create react app.")
+  .command("token", "Manage personal github token.")
+  .command("react-app", "Create react app template.")
   .alias("ra")
+  .command("react-component", "Create react component template.")
+  .alias("rc")
   .parse(process.argv);
