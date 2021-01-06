@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/mansouryoussef/kickstarter-js#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "colors": "^1.4.0",
     "commander": "^5.1.0",
     "configstore": "^5.0.1",
